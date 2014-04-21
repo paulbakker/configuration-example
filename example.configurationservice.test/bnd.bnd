@@ -1,0 +1,22 @@
+-buildpath:  \
+	org.amdatu.bndtools.test,\
+	org.apache.felix.dependencymanager,\
+	junit.osgi,\
+	osgi.core,\
+	osgi.cmpn,\
+	example.configurationservice;version=latest
+-runbundles:  \
+	org.apache.felix.dependencymanager,\
+	org.apache.felix.dependencymanager.runtime,\
+	org.apache.felix.configadmin,\
+	org.apache.felix.metatype,\
+	org.apache.felix.log,\
+	org.apache.felix.eventadmin,\
+	org.amdatu.bndtools.test,\
+	junit.osgi,\
+	example.configurationservice;version=latest
+Test-Cases: ${classes;CONCRETE;EXTENDS;junit.framework.TestCase}
+-runfw:org.apache.felix.framework;version='[4.2.1,4.2.1]'
+-runee:JavaSE-1.7
+Private-Package: \
+	example.configurationservice.test

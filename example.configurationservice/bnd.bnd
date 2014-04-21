@@ -1,0 +1,10 @@
+Bundle-Version: 0.0.0.${tstamp}
+-buildpath: \
+	org.apache.felix.dependencymanager,\
+	osgi.core,\
+	osgi.cmpn,\
+	../cnf/plugins/org.apache.felix.dependencymanager.annotation-3.1.1-SNAPSHOT.jar;version=file
+Private-Package:  \
+	example.configurationservice.impl
+Export-Package:  \
+	example.configurationservice
